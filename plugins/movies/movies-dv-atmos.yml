@@ -1,0 +1,25 @@
+name: Emulator ROMs & BIOS (All Consoles)
+author: Paul
+version: 1
+minVersion: "0.7"
+about: >
+    Complete ROM sets and BIOS packs for all major consoles
+sources:
+    - name: TorrentGalaxy ROM Sets
+      website: https://torrentgalaxy.to
+      htmlParser:
+          searchUrl: /torrents.php?search=No-Intro+OR+Redump+OR+TOSEC+OR+ROM+SET+OR+BIOS&sort=seeders
+          rows: div.tgxtablerow
+          title: { query: div.tgxtablecell.clickable-row > a }
+          magnet:
+              query: a[href^="magnet:"]
+              attribute: href
+          size: { query: span.badge.badge-secondary }
+          sl:
+              seeders: span.badge.badge-success
+actions:
+    - name: Open Magnet
+      requires: [debrid]
+      deeplink:
+          - os: iOS
+            scheme: "{link}"
