@@ -1,0 +1,23 @@
+name: CHD ROM Sets Only
+author: Paul
+version: 1
+minVersion: "0.7"
+about: CHD-format ROM sets (compressed, emulator-friendly)
+sources:
+    - name: CHD Packs
+      website: https://torrentgalaxy.to
+      htmlParser:
+          searchUrl: /torrents.php?search=CHD+ROMSET+OR+Redump+CHD&sort=seeders
+          rows: div.tgxtablerow
+          title: { query: div.tgxtablecell.clickable-row > a }
+          magnet:
+              query: a[href^="magnet:"]
+              attribute: href
+          sl:
+              seeders: span.badge.badge-success
+actions:
+    - name: Open Magnet
+      requires: [debrid]
+      deeplink:
+          - os: iOS
+            scheme: "{link}"
