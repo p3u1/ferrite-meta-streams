@@ -1,0 +1,23 @@
+name: Microsoft Xbox ROMs
+author: Paul
+version: 1
+minVersion: "0.7"
+about: Xbox and Xbox 360 ISOs
+sources:
+    - name: Xbox Packs
+      website: https://torrentgalaxy.to
+      htmlParser:
+          searchUrl: /torrents.php?search=Xbox+OR+Xbox+360+ISO&sort=seeders
+          rows: div.tgxtablerow
+          title: { query: div.tgxtablecell.clickable-row > a }
+          magnet:
+              query: a[href^="magnet:"]
+              attribute: href
+          sl:
+              seeders: span.badge.badge-success
+actions:
+    - name: Open Magnet
+      requires: [debrid]
+      deeplink:
+          - os: iOS
+            scheme: "{link}"
