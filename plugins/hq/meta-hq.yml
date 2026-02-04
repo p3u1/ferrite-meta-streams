@@ -1,0 +1,25 @@
+name: Meta HQ Streams
+author: Paul
+version: 1
+minVersion: "0.7"
+about: High-quality, seeder-first torrents
+sources:
+    - name: TorrentGalaxy HQ
+      version: 1
+      website: https://torrentgalaxy.to
+      htmlParser:
+          searchUrl: /torrents.php?search={query}&sort=seeders
+          rows: div.tgxtablerow
+          title: { query: div.tgxtablecell.clickable-row > a }
+          magnet:
+              query: a[href^="magnet:"]
+              attribute: href
+          size: { query: span.badge.badge-secondary }
+          sl:
+              seeders: span.badge.badge-success
+actions:
+    - name: Open Magnet
+      requires: [debrid]
+      deeplink:
+          - os: iOS
+            scheme: "{link}"
