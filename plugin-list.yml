@@ -5,27 +5,27 @@ minVersion: '0.7'
 
 plugins:
   # Movies
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/meta-movies.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/movies-4k-hdr.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/movies-dv-atmos.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/movies/meta-movies.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/movies/movies-4k-hdr.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/movies/movies-dv-atmos.yml
 
   # TV
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/meta-tv.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/tv-season-packs.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/tv/meta-tv.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/tv/tv-season-packs.yml
 
   # Anime
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/anime-nyaa.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/anime/anime-nyaa.yml
 
   # HQ
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/meta-hq.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/meta-cached.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/hq/meta-hq.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/hq/meta-cached.yml
 
   # ROMs
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/bios-only.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/chd-only.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/arcade-mame-fbneo.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/nintendo.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/sony.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/sega.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/microsoft.yml
-  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/emulator-all-roms.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/roms/bios-only.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/roms/chd-only.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/roms/arcade-mame-fbneo.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/roms/nintendo.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/roms/sony.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/roms/sega.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/roms/microsoft.yml
+  - https://raw.githubusercontent.com/p3u1/ferrite-meta-streams/main/roms/emulator-all-roms.yml
