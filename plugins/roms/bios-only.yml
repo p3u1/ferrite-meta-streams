@@ -7,7 +7,8 @@ sources:
     - name: BIOS Packs
       website: https://torrentgalaxy.to
       htmlParser:
-          searchUrl: /torrents.php?search=BIOS+Pack+OR+Firmware+OR+RetroArch+BIOS&sort=seeders
+          # Added {query} placeholder
+          searchUrl: /torrents.php?search={query}+BIOS+Pack+OR+Firmware+OR+RetroArch+BIOS&sort=seeders
           rows: div.tgxtablerow
           title: { query: div.tgxtablecell.clickable-row > a }
           magnet:
