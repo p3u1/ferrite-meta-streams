@@ -1,26 +1,28 @@
-name: Meta Movies (Public Trackers)
-author: Paul
+name: Meta Movies
+author: p3u1
 version: 1
-minVersion: "0.7"
-about: Public movie torrents aggregated from major trackers
+minVersion: '0.7'
+about: Public movie torrents from major trackers
+
 sources:
-    - name: 1337x Movies
-      version: 1
-      website: https://1337x.to
-      htmlParser:
-          searchUrl: /search/{query}/1/
-          rows: table.table-list > tbody > tr
-          title: { query: td.name > a:nth-child(2) }
-          magnet:
-              query: td.name > a:nth-child(2)
-              attribute: href
-          size: { query: td.size }
-          sl:
-              seeders: td.seeds
-              leechers: td.leeches
+  - name: 1337x Movies
+    version: 1
+    website: https://1337x.to
+    htmlParser:
+      searchUrl: /search/{query}/1/
+      rows: table.table-list > tbody > tr
+      title: { query: td.name > a:nth-child(2) }
+      magnet:
+        query: td.name > a:nth-child(2)
+        attribute: href
+      size: { query: td.size }
+      sl:
+        seeders: td.seeds
+        leechers: td.leeches
+
 actions:
-    - name: Open Magnet
-      requires: [debrid]
-      deeplink:
-          - os: iOS
-            scheme: "{link}"
+  - name: Open Magnet
+    requires: [debrid]
+    deeplink:
+      - os: iOS
+        scheme: '{link}'
